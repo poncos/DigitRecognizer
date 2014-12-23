@@ -110,12 +110,13 @@ int MatlabSession::getVarInteger(string aVarName) {
 	mxArray *T = NULL;
 	int result = -1;
 
+cout << "getVarInteger " << aVarName.c_str() << endl;
 	T = engGetVariable(ep, aVarName.c_str());
 
-	//cout << "reading variable: " <<  aVarName << endl;
+	cout << "reading variable: " <<  aVarName << endl;
 	if(T) {
 		if(mxGetClassID(T) == mxDOUBLE_CLASS) {
-			//cout << "variable type is correct" << endl;
+			cout << "variable type is correct" << endl;
 			result = (int)*(double*)mxGetPr(T);
 		}
 		mxDestroyArray(T);	

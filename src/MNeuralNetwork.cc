@@ -58,7 +58,7 @@ MNeuralNetwork* MNeuralNetwork::createNewFF(
 
 		cout << "Command: " << matlabCommand.str() << endl;
 		session->execute(matlabCommand.str());
-
+		
 		return new MNeuralNetwork(session, aVarName);
 }
 
@@ -92,9 +92,12 @@ int MNeuralNetwork::getNumInputs() {
 	stringstream tmpCommand;
 	tmpCommand << rname << "= " << itsVarName << ".numInputs";
 
+	cout << "tmp Command: " << tmpCommand.str()  << endl;
 	itsSession->execute(tmpCommand.str());
+	cout << "command executed" << endl;
 	result = itsSession->getVarInteger(rname);
 	//TODO free matlab variable
+	cout << "Value " << result << endl;
 	return result;
 }
 

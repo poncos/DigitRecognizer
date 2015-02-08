@@ -16,3 +16,6 @@ This project shows how to apply the typical steps necesary for any system of thi
 2. Neural network application to the preprocessed data.
 3. Data postprocessing and results generation.
 
+As aditional technologies, I honestly think that can be a interesting probject because graphical libraries like libSDL and libTIFF and used to generate a graphical user interface where the user can write with the mouse a digit and the application will preprocess the information to apply the neural network and predict the number written.
+
+There are several *.avi videos in the root directory of the project that can be watched to see how the application looks and works.

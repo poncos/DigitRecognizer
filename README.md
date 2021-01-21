@@ -1,4 +1,4 @@
-This project is aimed to offer an example of the used of matlab C interface, and the matlab neural network toolbox.
+This project is aimed to show how to make use of the matlab C interface, and the matlab neural network toolbox.
 
 It complements several posts I published in my blog (in spanish).
 
